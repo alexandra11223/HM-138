@@ -4,42 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Denis Novik</title>
+    <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
     <div class="wrapper">
-        <header>
-            <nav class="nav">
-                <ul class="nav-bar">
-                    <li><a href="#first">Home</a></li>
-                    <li><a href="#about_me">About me</a></li>
-                    <li><a href="#skills_section">Skills</a></li>
-                    <li><a href="#portfolio_section">Portfolio</a></li>
-                    <li><a href="#contacts">Contacts</a></li>
+        <header class="header">
+          <div class="container">
+            <nav class="header__nav">
+                <ul class="header__nav-bar">
+                    <li class="header__item">
+                      <a class="header__link" href="#first">Home</a></li>
+                    <li class="header__item">
+                      <a class="header__link" href="#about_me">About me</a></li>
+                    <li class="header__item">
+                      <a class="header__link" href="#skills_section">Skills</a></li>
+                    <li class="header__item">
+                      <a class="header__link" href="#portfolio_section">Portfolio</a></li>
+                    <li class="header__item">
+                      <a class="header__link" href="#contacts">Contacts</a></li>
                 </ul>
             </nav>
+          </div>
         </header>
 
-        <div class="banner">
+        <section class="banner">
+        <div class="container">
             <h1 class="title">Denis Novik</h1>
             <img src="assets/images/denis_novik.jpg" alt="">
         </div>
+      </section>
 
         <section class="about-me" id="about_me">
+          <div class="container">
                 <h2>About me</h2>
-                <p>Hi, I'm Denis – UX/UI designer from Minsk.
+                <p class="text">Hi, I'm Denis – UX/UI designer from Minsk.
                     I'm interested in design and everything connected with it.</p>
-                <p>I'm studying at courses "Web and mobile design 
+                <p class="text">I'm studying at courses "Web and mobile design 
                         interfaces" in IT-Academy.</p>
-                <p>Ready to implement excellent projects
+                <p class="text">Ready to implement excellent projects
                             with wonderful people.</p>
+          </div>
         </section>
 
         <section class="skills" id="skills_section">
+          <div class="container">
               <hgroup>
                 <h2 class="skills-title">Skills</h2>
                 <p class="skills-par">I work in such programs as</p>
               </hgroup>
-              <div>
+              <div class="icone">
                 <ul class="icone">
                   <li>
                     <figure>
@@ -87,6 +100,7 @@
                   </li>
                 </ul>
               </div>
+            </div>
           </section>
 
           <section class="portfolio" id="portfolio_section">
@@ -115,9 +129,9 @@
               </ul>
             </div>
           </section>
-        </div>
         
           <footer id="contacts">
+            <div class="container">
             <div class="flex-box">
               <hgroup class="contacts">
                 <h2>Contacts</h2>
