@@ -59,6 +59,7 @@ body {
 .about-me {
     padding: 100px 0;
     text-align: center;
+    background: var(--bg-gray, #F6F6F6);
 }
 
 .about-me__title {
