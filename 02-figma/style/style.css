@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-/* Reset CSS end */
+/* Reset CSS End */
 
 body {
     font-family: 'Open Sans', sans-serif;
@@ -16,7 +16,7 @@ body {
     margin: 0 auto;
 }
 
-/* Header start  */
+/* Header Start  */
 .header__nav {
     border-bottom: 1px solid #828282;
 }
@@ -38,10 +38,47 @@ body {
     color: #828282;
 }
 
-/* Header end  */
+/* Header End */
 
-/* Hero Start */
-/* Hero End */
+/* Banner Start */
+.title {
+    width: 300px;
+    color: var(--Black, #070707);
+    font-size: 48px;
+    padding-top: 12px;
+    padding-bottom: 50px;
+}
+
+.title_img {
+    width: 970px;
+}
+
+/* Banner End */
 
 /* About Start */
+.about-me {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.about-me__title {
+    padding-bottom: 50px;
+}
+
+.par {
+    width: 480px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.text {
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+}
 /* About End */
