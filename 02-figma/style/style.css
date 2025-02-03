@@ -14,11 +14,21 @@
 /* Reset CSS End */
 
 body {
+    width: 100%;
     font-family: 'Open Sans', sans-serif;
 }
 
 li {
     list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.wrapper {
+    width: 1440px;
+    margin: 0 auto;
 }
 
 .container {
