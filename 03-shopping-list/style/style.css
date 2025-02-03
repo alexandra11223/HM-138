@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto sans-serif;
+}
+
+li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.wrapper {
+    width: min(90%, 1200px);
+    margin-inline: auto;
+}
+
+.shopping-list-container {
+    width: 793px;
+    height: 507px;
+    background: #3B3F45;
+    border: solid #FFFFFF 4px;
+}
+
+.container-header {
+    background: #4A4F56;
+}
+
+.title {
+    text-align: center;
+    color: #FF8984;
+    padding: 19px 4px;
+}
+
+.title-par {
+    color: #FF8984;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    padding-bottom: 12px;
+}
+
+.shopping-list {
+    width: 800px;
+    margin: 0 auto;
+    padding: 20px 130px;
+}
+
+label {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+span {
+    size: 27px;
+    color: #FFF;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.shopping-list li {
+    width: 534px;
+    height: 45px;
+    background: #7A7593;
+}
+
+.shopping-list li:nth-child(odd) {
+    background-color: #88839E;
+}
+
+.shopping-list li label {
+    width: fit-content;
+    display: block;
+    justify-content: center;
+    color: #FFFFFF;
+}
+
+.shopping-list li .note {
+    font-size: 14.4px;
+    margin-left: 10px;
+    line-height: 22px;
+}
+
+.shopping-list li:hover {
+    background-color: #393646;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+}
+
+.shopping-list input:checked+label {
+    background-color: palegray;
+    transition: background-color 0.5s;
+    text-decoration: line-through;
+}
+
+.shopping-list input:checked+span {
+    text-decoration: line-through;
+    color: #9B96AC;
+}
+
+.shopping-list li:active {
+    background-color: #FF5C5C;
+}
+
+footer {
+    width: 534px;
+    height: 45px;
+    background-color: #4A4F56;
+    margin: 0 130px;
+}
+
+footer p {
+    color: #FF8984;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    padding-top: 12px;
+}
