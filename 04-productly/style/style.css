@@ -3,6 +3,7 @@
     --primary-colors-white: #FFF;
     --primary-colors-orange: #F90;
     --secondary-colors-brown-light: #544837;
+    --primary-btm-orange: #FF9900;
 }
 
 * {
@@ -33,6 +34,18 @@ button {
     cursor: pointer;
 }
 
+h2 {
+    color: var(--primary-colors-brown-dark);
+    text-align: center;
+    font-size: 36px;
+}
+
+p {
+    color: var(--secondary-colors-brown-light);
+    font-size: 16px;
+    line-height: 26px;
+}
+
 
 .wrapper {
     width: 1440px;
@@ -46,7 +59,7 @@ button {
     flex: 1 1 auto;
 }
 
-/* -------- */
+/* header st*/
 .header__container {
     display: flex;
     justify-content: space-between;
@@ -65,7 +78,7 @@ button {
 }
 
 .menu__link:hover {
-    color: #FF9900;
+    color: var(--primary-btm-orange);
 }
 
 .auth-buttons {
@@ -75,27 +88,35 @@ button {
     gap: 32px;
 }
 
-.bnt {
+.btn {
     border: 1px solid;
     border-radius: 4px;
     background: var(--primary-colors-orange);
-    padding: 12px 25px;
     color: var(--primary-colors-white);
-    font-size: 18px;
-    font-weight: 600;
-    height: 46px;
     transition: all 0.5s;
+    height: 50px;
+    font-size: 18px;
+    width: 180px;
 }
 
-.bnt:hover {
+.btn__header {
+    width: 110px;
+    height: 46px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.btn:hover {
     background-color: var(--primary-colors-white);
     color: var(--primary-colors-brown-dark);
     border: 1px solid var(--primary-colors-brown-dark);
     border-radius: 4px;
 }
 
-/* -------- */
+/* header end*/
 
+
+/* hero-section st */
 .hero-section {
     padding: 90px 105px;
 }
@@ -125,15 +146,49 @@ button {
 .par__hero-section {
     align-self: stretch;
     height: 91px;
-    color: var(--secondary-colors-brown-light);
     font-size: 18px;
     line-height: 28px;
     padding-bottom: 10px;
 }
 
-.bnt__hero-section {
-    height: 50px;
-    padding: 12px 40px;
+/* hero-section end */
+
+/* features-sec st  */
+.features {
+    padding: 0 105px 90px;
+    background: url(../assets/images/bg.svg) center bottom no-repeat;
 }
 
-/* -------- */
+.container__features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+}
+
+.title___features {
+    width: 539px;
+    color: var(--primary-colors-brown-dark);
+    text-align: center;
+    font-size: 36px;
+}
+
+.cards-list {
+    display: flex;
+    width: 1200px;
+    gap: 40px;
+}
+
+.tool-item {
+    display: flex;
+    width: 270px;
+    flex-direction: column;
+    align-items: flex-start;
+    /* gap: 30px; */
+}
+
+.title__tool-item {
+    margin: 30px 0 16px 0;
+}
+
+/* features-sec end */
