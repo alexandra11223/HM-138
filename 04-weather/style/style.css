@@ -5,6 +5,8 @@
 }
 
 body {
+    width: 1440px;
+    margin: 0 auto;
     font-family: "Lucida Sans Unicode", sans-serif;
     color: #FFF;
     font-style: normal;
@@ -13,11 +15,8 @@ body {
 }
 
 .main {
-    width: 100%;
-    max-width: 1440px;
     border: 25px solid #2B81AC;
     background: #39C;
-    margin: 0 auto;
     padding: 0 15px;
 }
 

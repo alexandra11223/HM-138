@@ -76,7 +76,7 @@ button {
 }
 
 .bnt {
-    border: 1px;
+    border: 1px solid;
     border-radius: 4px;
     background: var(--primary-colors-orange);
     padding: 12px 25px;
