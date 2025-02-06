@@ -10,6 +10,7 @@
     --primary-colors-orange: #F90;
     --secondary-colors-brown-light: #544837;
     --primary-btm-orange: #FF9900;
+    --primary--input-blue: #BCD0E5;
 }
 
 ul li {
@@ -201,9 +202,6 @@ button {
 /* features-sec end */
 
 /* benefits sec st */
-/* .benefits {
-    padding: 90px 105px;
-} */
 
 .container__benefits {
     display: flex;
@@ -217,7 +215,7 @@ button {
 }
 
 .container__benefits:last-child {
-    padding: 0 105px 0;
+    padding: 0 105px 90px;
 }
 
 .first-colum__benefits .thirt-colum__benefits .second-colum__benefits {
@@ -246,13 +244,73 @@ button {
     max-width: 570px;
 }
 
-/* benefits sec end */
+/* benefits end */
 
 
 .item__list__benefits__second {
     display: flex;
 }
 
-.par__item__list {
+.par__item__list__second {
     margin-left: 20px;
 }
+
+/* footer start */
+.footer {
+    padding: 70px 105px;
+}
+
+.container__footer {
+    display: flex;
+    justify-content: center;
+    gap: 140px;
+}
+
+.footer__logo {
+    width: 154.229px;
+}
+
+.footer__column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.footer__column__links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.footer__column__submit {
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+    gap: 25px;
+}
+
+.footer__column__form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.input__footer {
+    border-radius: 4px;
+    border: 1px solid var(--primary--input-blue);
+    width: 340px;
+    height: 50px;
+    padding: 0px 10px;
+    font-family: Montserrat;
+    font-size: 16px;
+    color: var(--primary--input-blue);
+}
+
+.footer__column__submit__title {
+    font-size: 20px;
+    line-height: 30px;
+}
+/* footer end */
