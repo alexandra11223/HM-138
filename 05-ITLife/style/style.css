@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --hover-card: #18B5DC;
+    --title-title-subtitle-text: #3C3C3C;
+    --line-color: #DDDBDB;
+    --title-color: #282528;
+}
+
+body {
+    font-family: "Lato", serif;
+    color: var(--title-title-subtitle-text);
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+}
+
+.wrapper {
+    width: 1440px;
+    ;
+    margin: 0 auto;
+}
+
+/* header start */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 128px;
+}
+
+.header_logo img {
+    width: 170px;
+    height: 60px;
+}
+
+.header_list {
+    display: flex;
+    width: 417px;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.menu__item {
+    color: var(--title-title-subtitle-text, #3C3C3C);
+    font-weight: 600;
+}
+
+.btn_header {
+    border: 1px solid var(--title-title-subtitle-text);
+    width: 130px;
+    height: 42px;
+    padding: 10px 20px;
+}
+
+/* header end */
+
+/* content-section start */
+
+.content-section {
+    padding: 150px 135px;
+}
+
+.content_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+}
+
+.title_content {
+    font-size: 34px;
+    letter-spacing: 4.42px;
+    border-bottom: 4px solid var(--line-color);
+    padding-bottom: 20px;
+}
+
+.par_content-section {
+    width: 570px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    padding-bottom: 60px;
+}
+
+.content-section__section_team {
+    display: inline-flex;
+    height: 333px;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.title-item {
+    color: var(--title-color);
+    font-size: 18px;
+}
+
+.title__section_team {
+    padding-top: 19px;
+}
+
+.par-section_team {
+    color: #646464;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+/* content-section end */
+
+/* footer start */
+.footer {
+    display: flex;
+    padding: 40px 135px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer_logo img {
+    width: 170px;
+    height: 60px;
+}
+
+.footer_list {
+    display: flex;
+    width: 417px;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 28px 0;
+}
+
+.footer_links {
+    display: flex;
+    width: 250px;
+    height: 42px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-left: 155px;
+}
+
+/* footer end */
