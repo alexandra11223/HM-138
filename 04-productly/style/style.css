@@ -166,7 +166,7 @@ button {
     background: url(../assets/images/bg.svg) center bottom no-repeat;
 }
 
-.container__features {
+.features__container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -203,22 +203,22 @@ button {
 
 /* benefits sec st */
 
-.container__benefits {
+.benefits__container {
     display: flex;
     align-items: center;
     gap: 165px;
     padding: 90px 105px;
 }
 
-.container__benefits:first-child {
+.benefits__container:first-child {
     padding: 0 105px 0;
 }
 
-.container__benefits:last-child {
+.benefits__containers:last-child {
     padding: 0 105px 90px;
 }
 
-.first-colum__benefits .thirt-colum__benefits .second-colum__benefits {
+.first-colum__benefits, .thirt-colum__benefits, .second-colum__benefits {
     display: flex;
     flex-direction: column;
     gap: 40px;
