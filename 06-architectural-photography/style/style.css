@@ -1,5 +1,3 @@
-/* font-family: "Delius Unicase", serif;
-font-family: "Roboto", serif; */
 * {
     margin: 0;
     padding: 0;
@@ -52,7 +50,6 @@ body {
     gap: 30px;
 }
 
-
 .photo {
     border-radius: 20px;
     background: var(--blure, linear-gradient(0deg, #241F24 0%, rgba(91, 91, 91, 0.45) 34.11%, rgba(187, 186, 192, 0.26) 62.5%));
@@ -83,17 +80,6 @@ body {
     height: 20px;
 }
 
-.item {
-    position: relative;
-    border-radius: 20px;
-    overflow: hidden;
-}
-
-.icone {
-    width: 20px;
-    height: 20px;
-}
-
 .btn {
     width: 40px;
     height: 40px;
@@ -110,6 +96,7 @@ body {
 
 .btn:hover {
     opacity: 1;
+    cursor: pointer;
 }
 
 .btn-like {
@@ -142,8 +129,7 @@ body {
     align-items: center;
     justify-content: space-between;
     color: #fff;
-    font-family: Roboto;
-    font-size: 1.25rem;
+    font-size: 20px;
     transition: all .5s ease;
 }
 
@@ -151,12 +137,19 @@ body {
     font-weight: 600;
 }
 
+.date {
+    color: var(--Gray-5, #E0E0E0);
+    font-size: 20px;
+}
+
 .item img {
     transition: all .5s ease;
+    filter: brightness(70%);
 }
 
 .item:hover img {
     scale: 1.1;
+    filter: brightness(100%);
 }
 
 .item::before,
