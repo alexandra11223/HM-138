@@ -271,6 +271,14 @@ body {
     flex-direction: column;
     gap: 18px;
     text-align: center;
+    align-items: center;
+}
+
+.sub-title__teachers {
+    width: 748px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 120%;
 }
 
 .teachers__box {
@@ -320,5 +328,25 @@ body {
     font-size: 48px;
 }
 
-.teachers__box2 {}
+.teachers__box2 {
+    position: relative;
+    top: 64px;
+    left: 0;
+    border-radius: 10px;
+    background-color: var(--color-text-bg);
+}
+
+.box2-list {
+    display: flex;
+    gap: 30px;
+    padding: 38px 0 14px;
+    list-style: none;
+    justify-content: center;
+}
+
+.box2-list-par {
+    width: 186px;
+    font-size: 14px;
+    line-height: 150%;
+}
 /* teachers sect end */
