@@ -10,16 +10,17 @@
     --font-family--subtitle: "Farro", serif;
     --font-family--menu: "Staatliches", serif;
     --font-family--icone: "Tourney", serif;
+    --font-family--second: "Roboto", serif;
 
 }
 
 body {
     font-family: var(--font-family--par);
     scroll-behavior: smooth;
-    background-image: url(../assets/images/bg-picture.png);
+    /* background-image: url(../assets/images/bg-picture.png);
     background-repeat: no-repeat;
     background-position: 830px 120px;;
-    background-attachment: fixed;
+    background-attachment: fixed; */
 }
 
 ul li {
@@ -35,6 +36,10 @@ a {
 .wrapper {
     max-width: 1440px;
     margin: 0px 120px 90px 120px;
+    background-image: url(../assets/images/bg-picture.png);
+    background-repeat: no-repeat;
+    background-position: 830px 120px;;
+    background-attachment: fixed;
 }
 
 .par {
@@ -190,3 +195,67 @@ a {
 .react-fundamentals-li:last-child {
     padding-bottom: 0;
 }
+
+
+/* Whos using start */
+.container {
+    max-width: 1440px;
+    margin: 0px 120px 90px 120px;
+}
+
+.container__header {
+    width: 1200px;
+    display: flex;
+    padding-top: 13px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.whos-using__title {
+    font-family: var(--font-family--second);
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: 1.44px;
+    margin-top: 83px;
+    display: flex;
+}
+
+.whos-using__title::before {
+    content: "";
+    position: relative;
+    top: 20px;
+    right: 20px;
+    width: 100px;
+    height: 8px;
+    background: #000;
+}
+
+.company__box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 20px 0px;
+    border-top: 1px solid #BFBFBF;
+    border-bottom: 1px solid #BFBFBF;
+    margin-top: 40px;
+}
+
+.company__box-item {
+    display: flex;
+    width: 270px;
+    height: 180px;
+    padding: 50px 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background: var(--logos-gray-bg, #E6E6E6);
+}
+
+.company__box-item:hover {
+    filter: invert(1);
+    transform: rotateX(360deg);
+}
+
