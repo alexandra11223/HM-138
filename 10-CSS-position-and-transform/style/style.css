@@ -12,6 +12,10 @@
     --font-family--icone: "Tourney", serif;
     --font-family--second: "Roboto", serif;
 
+    --logos-gray-bg: #E6E6E6;
+    --background-color-black: #000;
+    --border-color: #BFBFBF;
+
 }
 
 body {
@@ -38,7 +42,8 @@ a {
     margin: 0px 120px 90px 120px;
     background-image: url(../assets/images/bg-picture.png);
     background-repeat: no-repeat;
-    background-position: 830px 120px;;
+    background-position: 830px 120px;
+    ;
     background-attachment: fixed;
 }
 
@@ -227,7 +232,7 @@ a {
     right: 20px;
     width: 100px;
     height: 8px;
-    background: #000;
+    background: var(--background-color-black);
 }
 
 .company__box {
@@ -237,8 +242,8 @@ a {
     align-items: center;
     gap: 30px;
     padding: 20px 0px;
-    border-top: 1px solid #BFBFBF;
-    border-bottom: 1px solid #BFBFBF;
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
     margin-top: 40px;
 }
 
@@ -251,11 +256,12 @@ a {
     justify-content: center;
     align-items: center;
     border-radius: 8px;
-    background: var(--logos-gray-bg, #E6E6E6);
+    background: var(--logos-gray-bg);
+    transition: all 0.5s ease-out;
 }
 
 .company__box-item:hover {
     filter: invert(1);
     transform: rotateX(360deg);
 }
-
+/* Whos using end */
