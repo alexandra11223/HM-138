@@ -1,0 +1,192 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-family--par: "PT Sans", serif;
+    --font-family--title: "Francois One", serif;
+    --font-family--subtitle: "Farro", serif;
+    --font-family--menu: "Staatliches", serif;
+    --font-family--icone: "Tourney", serif;
+
+}
+
+body {
+    font-family: var(--font-family--par);
+    scroll-behavior: smooth;
+    background-image: url(../assets/images/bg-picture.png);
+    background-repeat: no-repeat;
+    background-position: 830px 120px;;
+    background-attachment: fixed;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.wrapper {
+    max-width: 1440px;
+    margin: 0px 120px 90px 120px;
+}
+
+.par {
+
+    font-family: var(--font-family--par);
+    font-size: 28px;
+    line-height: 48px;
+}
+
+.title {
+    font-family: var(--font-family--title);
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 48px;
+    letter-spacing: 1.44px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.title::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    width: 100px;
+    height: 8px;
+    background-color: #000;
+}
+
+.chapter {
+    font-family: var(--font-family--subtitle);
+    font-size: 30px;
+    letter-spacing: 1.2px;
+}
+
+.main {
+    display: flex;
+    gap: 30px;
+    margin-top: 125px;
+}
+
+/* header start */
+.header {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 1200px;
+    display: flex;
+    padding-top: 13px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.icone {
+    color: #FFF;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000;
+    font-family: var(--font-family--icone);
+    font-size: 22px;
+    line-height: 18px;
+    letter-spacing: 0.88px;
+}
+
+.nav-link {
+    display: flex;
+    gap: 14px;
+    font-family: var(--font-family--menu);
+    font-size: 22px;
+    letter-spacing: 0.66px;
+}
+
+/* header end */
+
+/* aside start */
+.aside-nav {
+    position: sticky;
+    top: 100px;
+    align-self: flex-start;
+    height: auto;
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 70px;
+    font-family: var(--font-family--title);
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: 1.44px;
+    text-transform: uppercase;
+}
+
+/* aside end */
+
+/* section start */
+.section {
+    width: 785px;
+}
+
+.container-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 70px;
+}
+
+.section__handling-text-input p {
+    padding-bottom: 40px;
+}
+
+.section__handling-text-input p:last-child {
+    padding-bottom: 0;
+}
+
+/* section end */
+
+/* style text start */
+.link {
+    text-decoration-line: underline;
+    text-underline-position: from-font;
+}
+
+.stylish {
+    font-style: italic;
+}
+
+.bold-word {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 48px;
+}
+
+.backgraund {
+    background: rgb(208 208 208 / 79%);
+}
+
+/* style text end */
+
+.react-fundamentals-li {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px 0;
+    font-size: 28px;
+    line-height: 48px;
+}
+
+.react-fundamentals-li:last-child {
+    padding-bottom: 0;
+}
