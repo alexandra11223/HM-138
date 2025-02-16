@@ -216,6 +216,10 @@ a {
     align-items: center;
 }
 
+.whos-using__container {
+    width: 1200px;
+}
+
 .whos-using__title {
     font-family: var(--font-family--second);
     font-size: 36px;
