@@ -261,11 +261,11 @@ a {
     align-items: center;
     border-radius: 8px;
     background: var(--logos-gray-bg);
-    transition: all 0.5s ease-out;
+    transition: all 1s ease-out;
 }
 
 .company__box-item:hover {
     filter: invert(1);
-    transform: rotateX(360deg);
+    transform: rotateY(360deg);
 }
 /* Whos using end */
