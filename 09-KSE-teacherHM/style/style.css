@@ -350,3 +350,81 @@ body {
     line-height: 150%;
 }
 /* teachers sect end */
+
+.study-blocks {
+    background: var(--background-section1);
+}
+
+.title__study-blocks {
+    text-align: center;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 115%; 
+    padding-top: 177px;
+}
+
+.study-blocks__img {
+    width: 824px;
+    height: 824px;
+    background-color: var(--background-section1);
+}
+
+.study-blocks__wrap {
+    display: flex;
+    position: relative;
+}
+
+.acordeon__study-blocks {
+    position: absolute;
+    top: 32px;
+    right: -15px;
+}
+
+.acordeon__item {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.acordeon__button {
+    background-color: #0E2D4C;
+    max-width: 540px;
+    border-radius: 10px;
+    color: #fff;
+    padding: 22px;
+
+}
+
+.study-blocks__list {
+    list-style: inside;
+}
+
+.acordeon__button-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.acordeon__content {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.6s;
+}
+
+.tab--1 {
+    display: none;
+}
+
+.tab--1:checked+.acordeon__content {
+    max-height: 1200px;
+}
+
+/* .tab--1:checked+.acordeon-icone {
+    transform: rotate(90deg);
+} */
+
+/* .acordeon-icone:focus {
+    transform: translateY(-50%) rotate(-135deg);
+} */
