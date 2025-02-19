@@ -322,9 +322,20 @@ button {
     justify-content: center;
     align-items: center;
     border: 1px solid var(--gray);
+    color: var(--gray);
+    background: var(--base-white);
+    transition: all 0.5s ease;
 }
 
-.footer_link:hover {}
+.footer_link:hover {
+    color: var(--base-white);
+    border: 1px solid var(--gray);
+    background: var(--gray);
+}
+
+.footer_icone path {
+    fill: currentcolor;
+}
 
 .footer__info {
     display: flex;
@@ -342,21 +353,12 @@ button {
 .footer-par {
     padding: 50px 380px 30px;
 }
-
-.footer_link {
-    color: var(--gray);
-    background: var(--base-white);
-    transition: all 0.5s ease;
-}
-
-.footer_link:hover {
-    color: var(--base-white);
-    border: 1px solid var(--gray);
-    background: var(--gray);
-}
-
-.footer_icone path {
-    fill: currentcolor;
-}
-
 /* footer end */
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 320px) {
+
+}

@@ -43,7 +43,6 @@ a {
     background-image: url(../assets/images/bg-picture.png);
     background-repeat: no-repeat;
     background-position: 830px 120px;
-    ;
     background-attachment: fixed;
 }
 
@@ -95,6 +94,7 @@ a {
     padding-top: 13px;
     justify-content: space-between;
     align-items: center;
+    background-color: white;
 }
 
 .navigation {
