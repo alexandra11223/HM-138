@@ -1,0 +1,43 @@
+:root {
+  --color-red: red;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.button {
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: bisque;
+}
+.button:hover {
+  color: red;
+}
+.button--secondary {
+  background-color: transparent;
+}
+
+.hero__title {
+  color: red;
+}
+.hero__title:hover {
+  color: blue;
+}
+@media (max-width: 991px) {
+  .hero__title {
+    color: green;
+  }
+}
+.hero__text {
+  background-color: aqua;
+}
+
+/*# sourceMappingURL=style.css.map */

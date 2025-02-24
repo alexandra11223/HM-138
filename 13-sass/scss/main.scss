@@ -1,0 +1,27 @@
+//Variable
+@use './variables/_color-variables.scss';
+@use './variables/media' as *;
+
+//Global 
+@use './global/main.scss';
+@use './global/button.scss';
+
+//Page
+
+.hero {
+    
+    &__title {
+        color: red;
+        &:hover {
+            color: blue;
+        }
+
+        @media (max-width: $tablet) {
+            color: green; 
+        }
+    }
+
+    &__text {
+        background-color: aqua;
+    }
+}
