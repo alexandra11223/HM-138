@@ -1,16 +1,11 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
 :root {
-    --font-title: "Roboto", serif;
-    --font-raleway: "Raleway", serif;
-    --font-open-sans: "Open Sans", serif;
-    --color-sub-text: #898F8F;
-    --color-gold: #FC0;
-    --color-grey: #666;
-    --color-text: #333;
-
+  --font-title: "Roboto", serif;
+  --font-raleway: "Raleway", serif;
+  --font-open-sans: "Open Sans", serif;
+  --color-sub-text: #898F8F;
+  --color-gold: #FC0;
+  --color-grey: #666;
+  --color-text: #333;
 }
+
+/*# sourceMappingURL=style.css.map */
