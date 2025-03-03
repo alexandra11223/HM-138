@@ -1,0 +1,24 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.container {
+    display: flex;
+    width: 1170px;
+    flex-direction: column;
+    align-items: center;
+    padding: 121px 135px 122px 135px;
+}
+
