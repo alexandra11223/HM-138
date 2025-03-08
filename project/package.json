@@ -1,0 +1,15 @@
+{
+  "name": "14-our-team",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "sass --watch  scss/main.scss style/style.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "sass": "^1.85.1"
+  }
+}
