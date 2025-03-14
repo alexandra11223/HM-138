@@ -5,7 +5,6 @@
 
 .header {
 
-    // background-image: url(../assets/images/b-g-img1.jpg);
     &__container {
         background-image: url(../assets/images/b-g-img1.jpg);
         width: 1440px;
@@ -31,6 +30,11 @@
         font-style: normal;
         font-weight: 400;
         line-height: normal;
+    }
+
+    &__menu-item:hover {
+        transform: scale(1.3);
+        transition: all .5s ease;
     }
 }
 
@@ -241,6 +245,12 @@
         gap: 32px;
     }
 
+    &__item {
+        position: relative;
+        cursor: pointer;
+    }
+
+
     &__item-top {
         display: flex;
         gap: 4px;
@@ -251,6 +261,18 @@
         padding: 8px;
         position: absolute;
         margin: 20px 180px;
+        opacity: 0;
+        z-index: 2;
+        transition: all .5s ease;
+    }
+
+    &__item:hover &__item-top {
+        opacity: 1;
+    }
+
+    &__item:hover &__image {
+        transform: scale(1.1);
+        transition: all .3s ease;
     }
 
     &__rate {
@@ -268,14 +290,54 @@
     &__location {
         display: flex;
         align-items: flex-start;
-        gap: 100px;
+        justify-content: space-around;
+        gap: 68px;
+        padding: 20px 0 8px;
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    &__price {
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
     }
 
     &__name {
-    color: var(--text-color-black);
-    font-size: 16px;
+        color: var(--text-color-black);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    &__btm {
+        display: flex;
+        gap: 6px;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    &__location-name {
+        font-size: 12px;
     font-style: normal;
-    font-weight: 700;
     line-height: normal;
+    }
+
+    &__btn {
+        display: flex;
+            width: 168px;
+            height: 48px;
+            padding: 12px 16px 12px 24px;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+            border-radius: 40px;
+            border: 1px solid var(--color-border-button);
+    }
+
+    &__btn:hover {
+        border: 2px solid var(--title-color-blue);
     }
 }
