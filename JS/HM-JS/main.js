@@ -6,7 +6,7 @@ let result = document.querySelector('.result')
 
 btn.onclick = () => {
     let name = inp1.value
-    result.innerHTML = 'Hello, ' + name + ' !'
+    result.innerHTML = 'Привіт, ' + name + ' !'
 }
 
 
