@@ -5,7 +5,8 @@ let btn = document.querySelector('.btn')
 let result = document.querySelector('.result')
 
 btn.onclick = () => {
-    result.innerHTML = 'Hello, ' + int1.value + ' !'
+    let name = inp1.value
+    result.innerHTML = 'Hello, ' + name + ' !'
 }
 
 
