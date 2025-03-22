@@ -5,64 +5,134 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HM-JS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: "Winky Sans", sans-serif;
+        }
+
+        button {
+            border: none;
+            outline: none;
+            background: none;
+            font-family: "Winky Sans", sans-serif;
+            cursor: pointer;
+        }
+
+        span {
+            font-style: italic;
+        }
+
+        .wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin: 10px;
+            padding: 10px;
+            background-color: #c2e8d2;
+            ;
+
+        }
+
+        .inp {
+            width: fit-content;
+            border-radius: 20px;
+            border-color: cadetblue;
+            border-style: solid;
+            padding: 6px;
+        }
+
+        .inp:focus {
+            border: 4px solid #29bc78;
+            transition: all .2s ease;
+        }
+
+        .btn {
+            width: 65px;
+            height: 25px;
+            background: cadetblue;
+            color: white;
+            border-radius: 20px;
+            font-size: 16px;
+        }
+
+        .btn:hover {
+            box-shadow: 0px 1px 10px 0px rgb(10 76 44);
+        }
+
+        .result {
+            background-color: azure;
+            width: fit-content;
+            border-radius: 10px;
+            margin: 4px;
+        }
+    </style>
+
+
 </head>
 
 <body>
-    <div class="section section_1">
-        <h3 class="desk">1.Запитай ім’я користувача та виведи у відповідь “Привіт, *ім’я*”</h3>
-        <input class="input1" type="text" id="input1">
-        <button class="btn">Submit</button>
-        <div class="result"></div>
+    <div class="wrapper">
+        <div class="section section_1">
+            <h3 class="desk">1. Запитай ім’я користувача та виведи у відповідь “Привіт, *ім’я*”</h3>
+            <input class="inp input1" type="text" id="input1">
+            <button class="btn">Submit</button>
+            <div class="result"></div>
+        </div>
+
+        <div class="section section_2">
+            <h3 class="desk">2. Запитай рік народження користувача, порахуй його/її вік і виведи результат. </h3>
+            <span>Твій рік народження?</span>
+            <input type="number" class="inp input2">
+            <button class="btn btn2">Submit</button>
+            <div class="result result2"></div>
+        </div>
+
+        <div class="section section_3">
+            <h3 class="desk">3. Запитай у користувача довжину сторони квадрату і виведи периметр цього квадрата. </h3>
+            <span>Введіть довжину сторони квадрата:</span>
+            <input type="number" class="inp input3">
+            <button class="btn btn3">Submit</button>
+            <div class="result result3"></div>
+        </div>
+
+        <div class="section section_4">
+            <h3 class="desk">4. Запитай у користувача радіус кола і виведи площу такої окружності. </h3>
+            <span>Введіть радіус кола:</span>
+            <input type="number" class="inp input4">
+            <button class="btn btn4">Submit</button>
+            <div class="result result4"></div>
+        </div>
+
+        <div class="section section_5">
+            <h3 class="desk">5. Запитай у користувача відстань в кілометрах між двома містами і за скільки годин він
+                хоче
+                дістатися.
+                Порахуй швидкість, з якою необхідно рухатися, щоб встигнути вчасно. </h3>
+            <span>Введіть відстань в кілометрах між двома містами:</span>
+            <input type="number" class="inp input-distance">
+            <span>За скільки годин ти хочеш дістатися до місця призначення?</span>
+            <input type="number" class="inp input-time">
+            <button class="btn btn5">Submit</button>
+            <div class="result result5"></div>
+        </div>
+
+        <div class="section section_6">
+            <h3 class="desk">6. Реалізуй конвертор валют.
+                Користувач вводить долари, програма переводить їх в євро. Курс валют зберігається в константі. </h3>
+            <span>Введи суму в доларах:</span>
+            <input type="number" class="inp input6">
+            <button class="btn btn6">Submit</button>
+            <div class="result result6"></div>
+        </div>
+
     </div>
-
-    <div class="section section_2">
-        <h3 class="desk">2. Запитай рік народження користувача, порахуй його/її вік і виведи результат. </h3>
-        <span>What is your year of birth?</span>
-        <input type="number" class="input2">
-        <button class="btn2">Submit</button>
-        <div class="result2"></div>
-    </div>
-
-    <div class="section section_3">
-        <h3 class="desk">3.Запитай у користувача довжину сторони квадрату і виведи периметр цього квадрата. </h3>
-        <span>Введіть довжину сторони квадрата:</span>
-        <input type="number" class="input3">
-        <button class="btn3">Submit</button>
-        <div class="result3"></div>
-    </div>
-
-    <div class="section section_4">
-        <h3 class="desk">4.Запитай у користувача радіус кола і виведи площу такої окружності. </h3>
-        <span>Введіть радіус кола:</span>
-        <input type="number" class="input4">
-        <button class="btn4">Submit</button>
-        <div class="result4"></div>
-    </div>
-
-    <div class="section section_5">
-        <h3 class="desk">5.Запитай у користувача відстань в кілометрах між двома містами і за скільки годин він хоче
-            дістатися.
-            Порахуй швидкість, з якою необхідно рухатися, щоб встигнути вчасно. </h3>
-        <span>Введіть відстань в кілометрах між двома містами:</span>
-        <input type="number" class="input-distance">
-        <span>За скільки годин ти хочеш дістатися до місця призначення?</span>
-        <input type="number" class="input-time">
-        <button class="btn5">Submit</button>
-        <div class="result5"></div>
-    </div>
-
-    <div class="section section_6">
-        <h3 class="desk">6.Реалізуй конвертор валют.
-            Користувач вводить долари, програма переводить їх в євро. Курс валют зберігається в константі. </h3>
-        <span>Введи суму в доларах:</span>
-        <input type="number" class="input6">
-        <button class="btn6">Submit</button>
-        <div class="result6"></div>
-    </div>
-
-
-
-
 
     <script src="main.js"></script>
 </body>
