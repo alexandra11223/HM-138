@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вивід Гравців</title>
+    <style>
+    
+        img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+
+    <div class="test">
+        Вивід Гравців
+        <select class="sel">
+            <option value="5">5</option>
+            <option value="10">10</option>
+            <option value="15">15</option>
+        </select>
+        <button class="btn">Show</button>
+        <button class="res">Reset</button>
+
+        <span>Пошук: </span>
+        <input class="inp2" type="text" placeholder="Name">
+        <button class="search-btn">Search</button>
+    </div>
+
+
+    <ul class="out">
+    </ul>
+
+
+    <script>
+
+        // Завдання
+        // 1: Кнопка Resset очищуемо .out
+        // 2: Реалызувати пошук if(inp.value ===)
+
+        // "Екстра"
+        // Варыант 2 Sasha.png Sveta.png <li> test(users[i])
+
+
+        let out = document.querySelector('.out')
+        let btn = document.querySelector('.btn')
+        let select = document.querySelector('.sel')
+        let resBtn = document.querySelector('.res')
+        let inpSearch = document.querySelector('.inp2')
+        let btnSearch = document.querySelector('.search-btn')
+
+        // ---------- 0        1        2       3       4
+        let users = ['Sasha', "Olha", 'Sveta', 'Vika', 'Kolya', 'Sasha', "Olha", 'Sveta', 'Vika', 'Kolya', 'Sasha', "Olha", 'Sveta', 'Vika', 'Kolya']
+
+
+        function test(name) {
+            return `<li>
+                     <img src="./img/${name}.png" alt="${name}">
+                     ${name}
+                </li>`;
+        }
+
+        btn.onclick = () => {
+            out.innerHTML = ""
+
+            for (let i = 0; i < +select.value; i++) {
+                out.innerHTML += test(users[i])
+            }
+        }
+
+        resBtn.onclick = () => {
+            out.innerHTML = "";
+            inpSearch.value = "";
+        }
+
+        btnSearch.onclick = () => {
+            const user = inpSearch.value.trim();
+            out.innerHTML = "";
+
+            let found = false; 
+            for (let i = 0; i < users.length; i++) {
+        if (users[i] === user) {
+            out.innerHTML += test(users[i]);
+            found = true;
+        }
+    }
+    if (!found) {
+        out.innerHTML = "<li>Користувача не знайдено.</li>";
+    }
+    }
+
+    </script>
+
+</body>
+
+</html>
